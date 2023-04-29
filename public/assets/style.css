@@ -1,23 +1,30 @@
 :root {
-    --bg-color: #000000;
-    --text-color: #fff;
-    --header-text-color: #fff;
-    --header-color: #08062400;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    list-style: none;
-  }
-  
-  /* Body  */
-  
-  body {
-    min-height: 100vh;
-    background: var(--bg-color);
-    color: var(--text-color);
-  }
+  --bg-color: #000000;
+  --text-color: #fff;
+  --header-text-color: #fff;
+  --header-color: #08062400;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+}
+
+/* Body  */
+
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.primary-color {
+  color: rgb(133, 85, 255);
+}
+
+.secondary-color {
+  color: rgb(152, 152, 152);
+}
