@@ -3,6 +3,8 @@
   --text-color: #fff;
   --header-text-color: #fff;
   --header-color: #08062400;
+  --primary-text-color: rgb(133, 85, 255);
+  --secondary-text-color: rgb(152, 152, 152);
 }
 
 * {
@@ -21,10 +23,39 @@ body {
   color: var(--text-color);
 }
 
+button {
+  color: var(--primary-text-color);
+
+  width: 10rem;
+  height: 3rem;
+
+  border: 2px solid var(--primary-text-color);
+  border-radius: .2rem;
+  background-color: transparent;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  transition: all .3s ease-in-out;
+  padding: 0.25rem 1rem;
+
+}
+
+button:hover {
+  color: white;
+  background-color: rgba(133, 85, 255, .1);
+  background-size: 200% auto;
+  background-position: left center;
+  box-shadow: .2rem .5rem 1rem .2rem rgba(134, 85, 255, .4);
+}
+
 .primary-color {
-  color: rgb(133, 85, 255);
+  color: var(--primary-text-color);
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+  text-shadow: .025rem .025rem 2rem var(--primary-text-color) !important;
 }
 
 .secondary-color {
-  color: rgb(152, 152, 152);
+  color: var(--secondary-text-color);
+}
+
+.ti {
+  text-indent: 1px;
 }
