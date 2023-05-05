@@ -59,3 +59,18 @@ button:hover {
 .ti {
   text-indent: 1px;
 }
+
+.card-body {
+  background-color: rgb(20, 20, 20);
+  border-radius: .075em;
+}
+
+.card {
+  border: 0;
+  transition: all 1s ease;
+  transform-style: preserve-3d;
+}
+
+.card:hover {
+  box-shadow: .2rem .5rem 1rem .2rem rgba(134, 85, 255, .4);
+}
