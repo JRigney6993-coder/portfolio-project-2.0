@@ -72,11 +72,10 @@ button:hover {
   transition: all .75s ease;
   transform-style: preserve-3d;
 
+
 }
 
-.card:hover {
-  box-shadow: .2rem .5rem 1rem .2rem rgba(134, 85, 255, .4);
-}
+
 
 @media (max-width: 1000px) {
   .card {
