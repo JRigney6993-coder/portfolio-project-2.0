@@ -17,29 +17,29 @@ window.addEventListener("scroll", function () {
     }
 });
 
-const div = document.querySelector('.card');
+const cards = document.querySelectorAll('.card');
 
-div.style.overflow = 'visible';
+cards.forEach(div => {
+    Array.from(div.children).forEach(child => {
+        child.style.transformStyle = 'preserve-3d';
+    });
 
-Array.from(div.children).forEach(child => {
-    child.style.transformStyle = 'preserve-3d';
+    div.addEventListener('mouseenter', () => {
+        div.addEventListener('mousemove', rotateDiv);
+    });
+
+    div.addEventListener('mouseleave', () => {
+        div.removeEventListener('mousemove', rotateDiv);
+        div.style.transform = '';
+    });
+
+    function rotateDiv(e) {
+        const rect = div.getBoundingClientRect();
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
+        const deltaX = e.clientX - rect.left - centerX;
+        const deltaY = e.clientY - rect.top - centerY;
+
+        div.style.transform = `rotate3d(${+deltaY}, ${-deltaX}, 0, 30deg)`;
+    }
 });
-
-div.addEventListener('mouseenter', () => {
-    div.addEventListener('mousemove', rotateDiv);
-});
-
-div.addEventListener('mouseleave', () => {
-    div.removeEventListener('mousemove', rotateDiv);
-    div.style.transform = '';
-});
-
-function rotateDiv(e) {
-    const rect = div.getBoundingClientRect();
-    const centerX = rect.width / 2;
-    const centerY = rect.height / 2;
-    const deltaX = e.clientX - rect.left - centerX;
-    const deltaY = e.clientY - rect.top - centerY;
-
-    div.style.transform = `rotate3d(${+deltaY}, ${-deltaX}, 0, 20deg)`;
-}
