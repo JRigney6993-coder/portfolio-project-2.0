@@ -71,8 +71,12 @@ button:hover {
   border: 0;
   transition: all .75s ease;
   transform-style: preserve-3d;
+}
 
-
+.vl {
+  height: auto;
+  border-left: 2px solid var(--primary-text-color);
+  padding: 2vw;
 }
 
 
