@@ -76,7 +76,14 @@ button:hover {
 .vl {
   height: auto;
   border-left: 2px solid var(--primary-text-color);
+  margin-right: 0;
   padding: 2vw;
+  width: 50%;
+}
+
+.photo-display {
+
+  width: 50%;
 }
 
 
