@@ -61,19 +61,20 @@ nav>ul li {
 }
 
 nav>ul li a {
-  transition: all 0.3s ease 0s;
+  transition: all 0.5s ease 0s;
   text-decoration: none;
 }
 
+nav>ul>li>span {
+  color: rgb(134, 85, 255);
+}
+
 nav>ul li a:hover {
-  text-shadow: .075rem .075rem .15rem var(--secondary-text-color);
-  transition: all 0.2s;
-  color: #fff;
+  color: rgba(133, 85, 255, 0.649);
 }
 
 .nav-selected {
-  text-shadow: .025rem .025rem .1rem var(--primary-text-color) !important;
-  color: rgb(134, 85, 255) !important;
+  color: rgb(134, 85, 255);
 }
 
 @media (max-width: 1000px) {
