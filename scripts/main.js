@@ -52,9 +52,9 @@ $('.card').each(function () {
 $(document).ready(function() {
     // Define your project images
     var projects = {
-        'student-management-panel': ['./assets/images/projects/student_management/Image_4.jpg', './assets/images/projects/student_management/Image_1.jpg', './assets/images/projects/student_management/Image_2.jpg', './assets/images/projects/student_management/Image_3.jpg'],
-        'image-geofinder': ['./assets/images/projects/image_geofinder/Image_1.jpg'],
-        'state-analytics': ['./assets/images/projects/state_analytics/Image_1.jpg']
+        'student-management-panel': ['assets/images/projects/student_management/Image_4.jpg', './assets/images/projects/student_management/Image_1.jpg', './assets/images/projects/student_management/Image_2.jpg', './assets/images/projects/student_management/Image_3.jpg'],
+        'image-geofinder': ['assets/images/projects/image_geofinder/Image_1.jpg'],
+        'state-analytics': ['assets/images/projects/state_analytics/Image_1.jpg']
     };
 
     // Listen for button clicks
