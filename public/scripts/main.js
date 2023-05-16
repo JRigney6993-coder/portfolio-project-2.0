@@ -54,7 +54,7 @@ $(document).ready(function() {
     var projects = {
         'student-management-panel': ['./assets/images/projects/student_management/Image_4.jpg', './assets/images/projects/student_management/Image_1.jpg', './assets/images/projects/student_management/Image_2.jpg', './assets/images/projects/student_management/Image_3.jpg'],
         'image-geofinder': ['./assets/images/projects/image_geofinder/Image_1.jpg'],
-        'project3': ['image7.jpg', 'image8.jpg', 'image9.jpg']
+        'state-analytics': ['./assets/images/projects/state_analytics/Image_1.jpg']
     };
 
     // Listen for button clicks
