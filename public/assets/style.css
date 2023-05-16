@@ -54,7 +54,7 @@ button:hover {
   background-image: url("./images/gradient.png");
   background-repeat: no-repeat;
   background-position: top;
-  background-size: 150vw;
+  background-size: 110vw;
 
   padding: 8rem 4rem 8rem calc(1rem + 5%);
   display: flex;
@@ -86,7 +86,7 @@ button:hover {
 }
 
 .card-body {
-  background-color: rgb(20, 20, 20);
+  background-image: linear-gradient(rgb(37, 14, 93), #03060b);
   border-radius: .075em;
 }
 
@@ -95,6 +95,10 @@ button:hover {
   border: 0;
   transition: all .75s ease;
   transform-style: preserve-3d;
+}
+
+.card-text {
+  font-size: .75rem;
 }
 
 .vl {
@@ -114,15 +118,28 @@ button:hover {
   padding: 8rem 4rem 1rem;
 }
 
-
-
-
-
-@media (max-width: 1000px) {
-  .card {
-    width: 12rem !important;
-  }
+.progress {
+  background-color: var(--bg-color);
 }
+
+.progress-bar {
+  background-color: transparent;
+  background-image: linear-gradient(to right, rgb(48, 20, 117), var(--bg-color));
+}
+
+.modal-dialog {
+  max-width: 50%; 
+  margin: 30px auto; 
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+
+
+
 
 @media (max-width: 1000px) {
   .top-body {
@@ -131,6 +148,10 @@ button:hover {
 
   .about-button {
     margin-bottom: 15%;
+  }
+
+  .card {
+    width: 12rem !important;
   }
 }
 
